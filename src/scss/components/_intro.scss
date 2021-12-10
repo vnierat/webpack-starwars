@@ -1,0 +1,46 @@
+.intro {
+  display: flex;
+  font-size: 1.8rem;
+  margin: 10rem auto;
+  max-width: 780px;
+  padding: 0 30px;
+  align-items: flex-start;
+
+  @media only screen and (min-width: $desktop) {
+    padding: 0;
+  }
+
+  &__desc {
+    line-height: 2.2rem;
+
+    @media only screen and (min-width: $desktop) {
+      width: 50%;
+    }
+  }
+
+  &__desc-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: $OpenSansBold;
+  }
+
+  &__desc-text {
+    margin-bottom: 20px;
+  }
+
+  &__image {
+    width: 50%;
+    text-align: center;
+    display: none;
+
+    @media only screen and (min-width: $desktop) {
+      display: block;
+    }
+
+    &--sticky {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 70px;
+    }
+  }
+}
